@@ -1,0 +1,60 @@
+# Bootcamp Notes
+## API
+Application Programming Interface
+- provide a way for creating user code that utilises pre-built code to conduct various tasks.
+## API Key & importance of its access
+API key is used by multiple web APIs, that provide access control (for identification).
+API key usually is related to the identification of API user also different rights (i.e.quota and authorisation area) that are open for access to the key
+- applies to HTTPS for example
+
+## Query String
+General thumb of rule in URL:
+protocal (HTTP/ HTTPS), location of file/ program (in form of host-name/ file-name) and query string
+
+- length limitation
+Try to limit the length of query strength (depends on the server ability to handle MAX 2000)
+> The HTTP protocol does not place any a priori limit on the length of
+   a URI. Servers MUST be able to handle the URI of any resource they
+   serve, and SHOULD be able to handle URIs of unbounded length if they
+   provide GET-based forms that could generate such URIs. A server
+   SHOULD return <b>414 (Request-URI Too Long) status</b> if a URI is longer
+   than the server can handle (see section 10.4.15).
+
+## Use of API Key (with examples)
+
+<code>
+//use of concatanation to clean code <br>
+var apiKey = 'trilogy'; <br>
+var queryURL = "https://www.omdbapi.com/?t=dune&y=&plot=short&apikey=" + apiKey;
+</code>
+
+## API endpoint
+APi endpoint is
+Specific digital location where that allows communication and connections between sofeware programs (via exchange of code)
+- requests for information are sent by one program to retrieve pre-existing digital resource 
+
+>Sending request for information from web application/ server ➡ Receive response 
+
+<b>Example : Instagram</b>
+
+- business and creators endpoint that measure media and profile interactions
+- moderation endpoint that regulate comments and replies
+- discovery of hashtagged media 
+etc.
+
+## JSON
+JavaScript Object Notation
+it is a common format that data will be presented via an API.
+
+## AJAX
+Asynchronous JavaScript And XML. It is nota programming language but rather a technology <br>
+It allows us to update web pages by exchanging data with a web server, without reloading the page
+
+### .then() function
+
+## Break into pieces
+User input -> response -> output
+
+
+
+
