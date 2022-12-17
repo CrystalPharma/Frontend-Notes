@@ -1,5 +1,7 @@
 # Bootcamp Notes
 ## Fundamental Javascript
+## Javascript 
+JavaScript is a programming language that allows programmers to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. 
 
 ## JavaScript engine
 -	Converts human readable codes into machine code without producing intermediate codes
@@ -11,6 +13,26 @@
 - useful in debugging and reviewing any errors in inputting codes and highlight in the Console window
 - Consoles are opened in common developer tools
 
+## Console.log
+Console.log is a function that prints message that exits in the Javascript engine
+- it is particularly impprtant to test whether the code is functioning as intended
+
+## Variables 
+(Noun) in Javascript in the following forms:
+- numbers  (1)
+- strings ("string")
+- Booleans (true, false)
+etc.
+
+## Arithmetic operators
+
+
+## Array (arr)
+
+
+## Object
+
+## Method
 
 ## API
 Application Programming Interface
