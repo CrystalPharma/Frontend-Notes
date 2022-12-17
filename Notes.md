@@ -1,4 +1,17 @@
 # Bootcamp Notes
+## Fundamental Javascript
+
+## JavaScript engine
+-	Converts human readable codes into machine code without producing intermediate codes
+-	Many of the JavaScript engine to date are JIT compilers (just in time compilers) that produce in time translation and optimisation 
+
+## Console windows/ interfaces
+- Allow to input commands and view outputs
+- Input commands to console, taken live to JavaScript JIT engine compiled, processed and presented viewing the outputs of the commands delivered into human readable format texts 
+- useful in debugging and reviewing any errors in inputting codes and highlight in the Console window
+- Consoles are opened in common developer tools
+
+
 ## API
 Application Programming Interface
 - provide a way for creating user code that utilises pre-built code to conduct various tasks.
