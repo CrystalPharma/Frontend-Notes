@@ -25,14 +25,101 @@ Console.log is a function that prints message that exits in the Javascript engin
 etc.
 
 ## Arithmetic operators
+- +(addition)
+- -(subtraction)
+- *(multiplication)
+- /(division)
 
+## Modulo Remainder
+- Remainder operator(%) 
+returns the remainder left over when one operand is divided by a second operand
+
+## Assignment Operator
+- Equality operators (=, ==, === strictly equality,!=== strict inequality )
+- Comparison operators (>, <)
+
+## Logical Operator
+- || (or), && (and), ! (not)
 
 ## Array (arr)
+- Single variable to store multiple elements (list of elements)
+- simple to access particular element / variable later on 
+<br>e.g. <code>var string = [1,2,3,,4,5,6];</code>
+### Member access in arr
+- start from 0 to the arr length - 1 (as starts from 0) <br>
+e.g. <code>var string = [1,2,3,,4,5,6];<br> string[0] // print 1//
+   </code>
+
+## for loop
+Control flow statement
+for specifying iteration, which allows code to be executed repeatedly. A for 
+loop has two parts: a headerspecifying the iteration, and a body
+which is executed once per iteration.
+<br>e.g. <code>
+var string = [apple,pear,orrange,avocado,strawberry]; <br>
+for (var i = 0; i < string.length; i++) { <br>
+   console.log string[i]; <br>
+} // print apple,pear,orrange,avocado,strawberry
+</code>
+
+## Alerts, Confirms and Prompts (text pop up or fill-in)
+Alerts
+<code>alert("Hello! I am an alert box!!");</code><br>
+Confirms
+<code>confirm("Would you like to code");</code>//return true or false in string form (confirm/cancel)<br>
+Prompts
+<code>
+function myFunction() {
+let person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";}</code><br>
+//return as string <br>
+Important to parseInt* to return as number from string
+
+## if else statement
+The if...else statement executes a statement if a specified condition is true. If the condition is false, another statement in the optional else clause will be executed.
+<br><code>function testNum(a) {<br>
+  let result;<br>
+  if (a > 0) {<br>
+    result = 'positive';<br>
+  } else {<br>
+    result = 'NOT positive';<br>
+  }<br>
+  return result;<br>
+}<br>
+
+console.log(testNum(-5));
+// expected output: "NOT positive"
+</code>
+
+## switch statement (simplified for multiple conditions)
+The switch statement evaluates an expression, matching the expression's value against a series of case clauses, and executes statements after the first case clause with a matching value, until a break statement is encountered. The default clause of a switch statement will be shown if no case matches the expression's value.
+
+<code> 
+const expr = 'Papayas';<br>
+switch (expr) {<br>
+  case 'Oranges':<br>
+    console.log('Oranges are $0.59 a pound.');<br>
+    break;<br>
+  case 'Mangoes':<br>
+  case 'Papayas':<br>
+    console.log('Mangoes and papayas are $2.79 a pound.');<br>
+    // expected output: "Mangoes and papayas are $2.79 a pound."<br>
+    break;<br>
+  default:<br>
+    console.log(`Sorry, we are out of ${expr}.`);<br>
+}
+</code>
+
+
+## while loop
 
 
 ## Object
 
 ## Method
+### Parseint
 
 ## API
 Application Programming Interface
