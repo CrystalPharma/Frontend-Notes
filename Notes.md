@@ -112,13 +112,22 @@ switch (expr) {<br>
 }
 </code>
 
-
 ## while loop
 
 
 ## Object
+- Object literal 
+JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.
+
+Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
+
+In addition to objects that are predefined in the browser, you can define your own objects. This chapter describes how to use objects, properties, and methods, and how to create your own objects.
+- Key-value pairs
+Unique identifier for accessing particular member value.<br>In objects, key-value pairs define the properties of an object
 
 ## Method
+Built in Named pieces of code with built in functions.
+And in Window object, Console preview, contains of many functions (methods) set up by JIT compilers
 ### Parseint
 
 ## API
