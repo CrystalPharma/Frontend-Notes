@@ -148,7 +148,7 @@ Unique identifier for accessing particular member value.<br>In objects, key-valu
 <code>
 var maseratiMc20 = {
 
-  engine :'v6';
+  engine :'v6'; //key and value pairs 
 
   maxTorque : '730 Nm';
 
@@ -156,6 +156,9 @@ var maseratiMc20 = {
 
 
 }
+
+//keys: engine, maxTorque, maxSpeed
+//values: 'v6', '730 Nm', '>325 km/h'
 </code>
 
 ## Method
@@ -192,12 +195,69 @@ const object1 = {
 </code>
 <br>
 
-2. Object.values()
+2. Object.values()<br>
+Object.values() returns an array of values of the object
 
+    <code>
+    var maseratiMc20 = {
 
-3. Object.entries()
+    engine :'v6',//key and value pairs 
 
-### Parseint
+    maxTorque : '730 Nm',
+
+    maxSpeed : '>325 km/h',
+    
+    }
+    var arrMc20 = Object.values(maseratiMc20);
+
+    console.log(arrMc20);
+
+    //return in console Array(3)
+
+    arrMc20 = ['v6', '730 Nm', '>325 km/h'];
+    
+    </code>
+
+3. Object.entries()<br>
+Object.entries() returns an array of values of the object
+
+    <code>
+    var maseratiMc20 = {
+
+    engine :'v6', //key and value pairs 
+
+    maxTorque : '730 Nm',
+
+    maxSpeed : '>325 km/h',
+    
+    }
+    var arrMc20En = Object.entries(maseratiMc20);
+
+    console.log(arrMc20En);
+
+    //return in console Array(3)
+
+   [
+    [
+        "engine",
+        "v6"
+    ],
+    [
+        "maxTorque",
+        "730 Nm"
+    ],
+    [
+        "maxSpeed",
+        ">325 km/h"
+    ]
+]
+    
+    </code>
+
+4.  Parseint Method
+
+## Nested data structure
+
 
 ## API
 Application Programming Interface
