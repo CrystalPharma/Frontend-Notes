@@ -62,6 +62,8 @@ for (var i = 0; i < string.length; i++) { <br>
 } // print apple,pear,orrange,avocado,strawberry
 </code>
 
+
+
 ## Alerts, Confirms and Prompts (text pop up or fill-in)
 Alerts
 <code>alert("Hello! I am an alert box!!");</code><br>
@@ -108,11 +110,25 @@ switch (expr) {<br>
     // expected output: "Mangoes and papayas are $2.79 a pound."<br>
     break;<br>
   default:<br>
-    console.log(`Sorry, we are out of ${expr}.`);<br>
+    console.log(`Sorry, we are out of ${expr}.`);<br> //ES6
 }
 </code>
 
 ## while loop
+While loop execute a specified statement upon evaluating the condition to be true.
+<br> <b>*Main difference between for loop and while loop</b>
+<br> While loop executes the statement until there is a break condition (usually using if statements) / when the condition returned to be false
+<br> for loop uses incrementation with the definite length
+<br> e.g. 
+<br> <code>let n = 0;
+
+while (n < 3) {
+  n++; <br>// looping though 1 - 3 and then returned n = 3
+
+}
+
+console.log(n);
+// expected output: 3</code>
 
 
 ## Object
@@ -125,9 +141,62 @@ In addition to objects that are predefined in the browser, you can define your o
 - Key-value pairs
 Unique identifier for accessing particular member value.<br>In objects, key-value pairs define the properties of an object
 
+
+<img src ="./mc20.png">
+<h2><u>Maserati MC20 Cielo</u></h2>
+
+<code>
+var maseratiMc20 = {
+
+  engine :'v6';
+
+  maxTorque : '730 Nm';
+
+  maxSpeed : '>325 km/h';
+
+
+}
+</code>
+
 ## Method
 Built in Named pieces of code with built in functions.
-And in Window object, Console preview, contains of many functions (methods) set up by JIT compilers
+And in Window object, Console preview, contains of many functions (methods) set up by JIT compilers<br>
+eg. -console.log -Math.random()
+- Obj Method s
+1. Object.keys()
+Object.keys() returns an array iterate object that contains the keys of object
+If you need the property values, use Object.values() instead. If you need both the property keys and values, use Object.entries() instead.<br>
+<code>
+const object1 = { 
+  
+   a: 'somestring',
+
+    b: 42,
+
+    c: false
+
+    };
+
+
+    console.log(Object.keys(object1));
+
+    var arr = Object.keys(object1);
+
+    console.log(arr[0]);
+
+    for (var i = 0; i < arr.length; i++) {
+
+      console.log(arr[i]);
+
+    }
+</code>
+<br>
+
+2. Object.values()
+
+
+3. Object.entries()
+
 ### Parseint
 
 ## API
