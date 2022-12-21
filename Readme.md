@@ -330,7 +330,7 @@ The variable assigned within an inner scope shadows the outer variable assigned 
 
 ## This keyword
 This is a keyword that always refer to an object and it can be referred to different values depends on the context. - window object, function, class or global.
-<br> e.g.
+<br> e.g.<br>
 <code>
 // this is refer to the global object
 
@@ -378,7 +378,7 @@ var investor = {
       console.log(this.initialInvestment * 1.15);
 
     },
-    
+
   },
 
 };
@@ -387,7 +387,37 @@ investor.investment.investmentGrowth();
 </code>
 
 ## Array Methods
+Method is an object that contains function value
+### .sort()
+sort() method is used to sort arr items into alphabetical order 
+<br> e.g.<br>
+<code>
 
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+
+months.sort();
+
+console.log(months);
+
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+</code>
+
+### .push()
+push() method is used to add one or more element(s) at the end of an array to the *original array
+<br> e.g.<br>
+<code>const arr1 = ['Moon', 'Sun', 'Mars'];
+
+const space = arr1.push('Jupiter'); 
+; // expected to be arr1 =['Moon', 'Sun', 'Mars', 'Jupiter'];
+
+conaole.log(space); // expected to return as 4;
+</code>
+
+
+### .slice(start,end)
+
+
+### replace (pattern, replacement)
 ## API
 Application Programming Interface
 - provide a way for creating user code that utilises pre-built code to conduct various tasks.
