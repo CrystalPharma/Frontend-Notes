@@ -148,11 +148,11 @@ Unique identifier for accessing particular member value.<br>In objects, key-valu
 <code>
 var maseratiMc20 = {
 
-  engine :'v6'; //key and value pairs 
+  engine :'v6', //key and value pairs 
 
-  maxTorque : '730 Nm';
+  maxTorque : '730 Nm',
 
-  maxSpeed : '>325 km/h';
+  maxSpeed : '>325 km/h',
 
 
 }
@@ -254,10 +254,66 @@ Object.entries() returns an array of values of the object
     
     </code>
 
-4.  Parseint Method
+4.  parseInt Method
+parseInt method is used to parse in strings(''/ "") into integers
+<br>e.g.
+<code>
+</code>
 
 ## Nested data structure
+A robust data structure is important to maintain function in multiple settings so that code inside can be easily updated <br>
+There are different examples of nested data structures
+- Arr of Arr
+- Obj of Obj
+- Arr of Obj
+- Obj of Arr
 
+## Composition
+Simplified hierachy system created by compositioning - Javascript objects are integrated together from large complex objects into simpler objects which produce code that is more reusable, clean and provide better solution.
+
+## Function
+Block of code designed to perform particular task and it is executed when fucntion is called or invoked
+
+- Function declaration
+indicate by named function 
+* particularly useful especially create on the global scope and be accessible throughout the code
+<code>
+function drive() {
+
+  //function block;
+
+  return;
+
+}
+</code>
+
+- Function expression
+Assign variable a function 
+<code>
+var drive = function() {
+
+  //function block;
+
+  return;
+
+}
+</code>
+Assignment operator = we use function followed by {}
+
+## Parameters and Logic
+Parameters allows to pass values into function by providing a name, values are then assigned when the function is being called/ invoked.
+<code>
+function greet(firstName) {
+
+  console.log("Hello, " + firstName);
+
+  return;
+
+}
+c
+greet('Harry');
+</code>
+  
 
 ## API
 Application Programming Interface
@@ -314,7 +370,6 @@ It allows us to update web pages by exchanging data with a web server, without r
 
 ## Break into pieces
 User input -> response -> output
-
 
 
 
