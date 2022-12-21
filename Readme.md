@@ -318,12 +318,23 @@ c
 greet('Harry');
 </code>
 
-## Scope 
+## Scope and Shadowing
 Scope refers to the current context of scope that determines the accessibility of variables declared.
 - Global Scope
 Variables are accessible globally outside of block
 - Local Scope
 Variables are accessible locally inside of block
+- Variable shadowing
+Declaring a variable in certain scope and reassign values in another level of scope
+The variable assigned within an inner scope shadows the outer variable assigned in the outer scope.
+
+## Object and Methods
+Javascript is a language full of objects that range from arrays, function to methods.
+- Methods is a function that lives within objects
+<br> 
+## This keyword
+
+## Array Methods
 
 ## API
 Application Programming Interface
