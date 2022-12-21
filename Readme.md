@@ -300,6 +300,10 @@ var drive = function() {
 </code>
 Assignment operator = we use function followed by {}
 
+- Callback function
+Callback function is usually passed into another function asynchronously  as an arguement to invoke a planned response - awaits for results generated from a synchronous function then complete the routine / action intended
+
+
 ## Parameters and Logic
 Parameters allows to pass values into function by providing a name, values are then assigned when the function is being called/ invoked.
 <code>
@@ -313,7 +317,13 @@ function greet(firstName) {
 c
 greet('Harry');
 </code>
-  
+
+## Scope 
+Scope refers to the current context of scope that determines the accessibility of variables declared.
+- Global Scope
+Variables are accessible globally outside of block
+- Local Scope
+Variables are accessible locally inside of block
 
 ## API
 Application Programming Interface
