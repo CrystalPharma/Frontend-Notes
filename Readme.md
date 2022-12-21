@@ -328,11 +328,63 @@ Variables are accessible locally inside of block
 Declaring a variable in certain scope and reassign values in another level of scope
 The variable assigned within an inner scope shadows the outer variable assigned in the outer scope.
 
-## Object and Methods
-Javascript is a language full of objects that range from arrays, function to methods.
-- Methods is a function that lives within objects
-<br> 
 ## This keyword
+This is a keyword that always refer to an object and it can be referred to different values depends on the context. - window object, function, class or global.
+<br> e.g.
+<code>
+// this is refer to the global object
+
+console.log(this);
+
+// this is refer to the window object
+
+function helloThis() {
+
+  console.log('Inside this function, this is ' + this);
+
+}
+
+helloThis ();
+
+
+// this is refer to the variable child object and refer to age:10 (property)
+
+var child = {
+
+  age: 10,
+
+  ageTenYears: function () {
+
+    console.log(this.age + 10);
+
+  },
+
+};
+
+child.ageTenYears();
+
+// this is refer to the variable investor and call property initial investment and multiply
+
+var investor = {
+
+  name: 'Cash Saver',
+
+  investment: {
+
+    initialInvestment: 5000,
+
+    investmentGrowth: function () {
+
+      console.log(this.initialInvestment * 1.15);
+
+    },
+    
+  },
+
+};
+
+investor.investment.investmentGrowth();
+</code>
 
 ## Array Methods
 
