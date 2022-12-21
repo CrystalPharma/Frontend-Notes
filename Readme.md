@@ -415,9 +415,20 @@ conaole.log(space); // expected to return as 4;
 
 
 ### .slice(start,end)
+slice() method is used to slice and returns a portion of array into a new array object (passing in arguements of the start and end of slice)
+<br>*require to store in a new varible, const
+<br> e.g.<br>
+<code>
+	var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+	var animalSlice = animals.slice(2);
 
+  console.log(animals); // expected to return as ["ant",	"bison",	"camel",	"duck",	"elephant]
+  console.log(animalSlice); //expected to return as ["camel",	"duck",	"elephant"]
+</code>
 
 ### replace (pattern, replacement)
+<br> e.g.<br>
+<code>
 ## API
 Application Programming Interface
 - provide a way for creating user code that utilises pre-built code to conduct various tasks.
