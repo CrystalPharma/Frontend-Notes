@@ -433,6 +433,11 @@ Returns a new string with part or all matches of a pattern replaced by a replace
 Syntax
 
 replace(pattern, replacement);
+
+### .find()
+Returns the first element element of array that satisfied the testing function. If no value satisfy the testing function, the nethod return undefined
+<br> e.g.<br>
+
 </code>
 
 ## String methods
@@ -501,6 +506,22 @@ console.log(count);
 ### .map()
 creates a new array populated with the results of calling a provided function on every element in the calling array
 
+<br>e.g.<br>
+<code>
+const items = [<br>
+  { name: 'TV', price: 200},<br>
+  { name: 'PC', price: 2000},<br>
+  { name: 'phone', price: 1000},<br>
+  { name: 'Bike', price: 100},<br>
+}<br>
+
+const itemNames = items.map(item) => {<br>
+  return item.name<br>
+});<br>
+console.log(itemNames);<br>
+//expect to return arr(4)['TV', 'PC', 'phone', 'Bike'] length: 4
+
+</code>
 
 ## API
 Application Programming Interface
