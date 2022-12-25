@@ -427,8 +427,66 @@ slice() method is used to slice and returns a portion of array into a new array 
 </code>
 
 ### replace (pattern, replacement)
+Returns a new string with part or all matches of a pattern replaced by a replacement
 <br> e.g.<br>
 <code>
+Syntax
+
+replace(pattern, replacement);
+</code>
+
+## String methods
+Apart from array methods, string methods also provide in-built methods to manipulate strings.
+
+## Iterative methods
+### .forEach()
+forEach method is used as a call-back function that accepts up to 3 arguements 
+- value
+- index
+- arr
+<br>e.g. 
+<code> 
+const numbers = [1, 2, 3, 4, 5];
+
+*forEach function
+function consoleItem (item), index, arr) {
+
+  console.log(item);
+
+  // expected to return 1 2 3 4 5
+
+}
+
+<br> 
+*Arrow function
+
+numbers.forEach((item, index, arr) => {
+
+  console.log('a['+ index +'] = ' + item);
+
+  // expected to return a[0] = 1 a[1] = 2 a[2] = 3 a[3] = 4 a[4] = 5
+
+}); 
+
+<br>
+*Sum function using forEach method
+
+numbers.forEach(item => {
+
+  sum += item;
+
+});
+
+console.log(sum);
+
+<br> function to check frequency
+
+
+</code>
+
+### .map()
+
+
 ## API
 Application Programming Interface
 - provide a way for creating user code that utilises pre-built code to conduct various tasks.
