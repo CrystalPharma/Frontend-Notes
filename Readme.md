@@ -440,11 +440,12 @@ Apart from array methods, string methods also provide in-built methods to manipu
 
 ## Iterative methods
 ### .forEach()
-forEach method is used as a call-back function that accepts up to 3 arguements 
+forEach method is used as a call-back function that accepts up to 3 arguements, that executes a provided function once for each array element
 - value
 - index
 - arr
-<br>e.g. 
+
+<br>e.g.<br>
 <code> 
 const numbers = [1, 2, 3, 4, 5];
 
@@ -476,15 +477,29 @@ numbers.forEach(item => {
   sum += item;
 
 });
-
+ 
 console.log(sum);
 
 <br> function to check frequency
 
+const letters = ['a','b','c','d','e','a','b'];
 
+let count = {};
+
+letters.forEach (item => {<br>
+  if (count[item]) {<br>
+    count[item]++;<br>
+  } else {<br>
+    count[item] = 1;<br>
+  }
+
+});
+
+console.log(count);
 </code>
 
 ### .map()
+creates a new array populated with the results of calling a provided function on every element in the calling array
 
 
 ## API
