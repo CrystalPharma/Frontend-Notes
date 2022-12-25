@@ -437,7 +437,51 @@ replace(pattern, replacement);
 ### .find()
 Returns the first element element of array that satisfied the testing function. If no value satisfy the testing function, the nethod return undefined
 <br> e.g.<br>
+var numbers = [2, 4, 6, 8, 10, 12];<br>
 
+var planets = [<br>
+  {
+      name: 'Earth',
+      moons: 1
+  },<br>
+  {
+      name: 'Mars',
+      moons: 2
+  },<br>
+  {
+      name: 'Jupiter',
+      moons: 79
+  },<br>
+  {
+      name: 'Saturn',
+      moons: 82
+  }<br>
+];<br>
+
+// Filtering Methods<br>
+
+// Find<br>
+console.log(numbers.find(function(i) {<br>
+  return i > 10<br>
+}))<br>
+
+console.log(planets.find(function(i) {<br>
+  return i.moons > 10<br>
+}))<br>
+</code>
+
+### .filter()
+.filter method creates a shallow copy of portion of given array and filtered to only elements from the given array that pass the parameter of testing function
+
+<code>
+// Find<br>
+console.log(numbers.find(function(i) {<br>
+  return i > 10<br>
+}))<br>
+
+console.log(planets.find(function(i) {<br>
+  return i.moons > 10<br>
+}))<br>
 </code>
 
 ## String methods
