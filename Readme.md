@@ -598,16 +598,16 @@ DOM is referred to be tree objects/ nodes that is created by the web browser
 ### In-built DOM methods
 <b>Examples</b>
 <br><code> 
-document.domain //domain name
-document.URL //URL location
-document.title //title of the HTML document
-document.head //targeting head of the HTML 
-document.body //targeting body of the HTML
-document.all[index] //targeting specific child Node of the document
-docuement.all[5].textContent = '' //targeting the sixth child Node of the HTML document and changing text content into given text
-document.images
-document.links
-*these methods could be of disadvantage for maintainence as index of child Node can change due to ammendments 
+document.domain //domain name <br>
+document.URL //URL location <br>
+document.title //title of the HTML document <br>
+document.head //targeting head of the HTML <br>
+document.body //targeting body of the HTML<br>
+document.all[index] //targeting specific child Node of the document<br>
+docuement.all[5].textContent = '' //targeting the sixth child Node of the HTML document and changing text content into given text<br>
+document.images<br>
+document.links<br>
+*these methods could be of disadvantage for maintainence as index of child Node can change due to ammendments <br>
 </code>
 
 ### Parent Child Relationship
@@ -616,9 +616,24 @@ Parent Child is commonly used in the reference of Tree and Nodes of document.
 Parent is an object that contains more than one children (Node)
 Child(Node) can also contain children
 
-### DOM transversal
-DOM transversal is referred to be working down the DOM tree from targeting particular parent element to passing into the specific child element to make ammendments
 
+### DOM traversal
+DOM traversal is referred to be working down the DOM tree from targeting particular parent element to passing into the specific child element to make ammendments with different directions
+
+* Downwards
+<code>
+- document.querySelector
+- document.querySelectorAll('p')// targeting all paragraph tags
+- document.children //targeting the specific HTML elements that is the direct child of the tree
+- document.getElementbyId('id-name') //targeting particular elements with specific id-name
+- document.getElementbyClassName
+// targeting particular elements with specific class name
+</code>
+* Upwards
+- document
+### Events
+
+### Client Side Storage
 
 
 
