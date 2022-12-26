@@ -590,7 +590,20 @@ Web browser is the most common programme (user agent) used to retrieve and displ
 Every webpage, img and videos on web can be accessed via specific unifrom resource locator (URL)
 
 ## DOM manipulation
-Document Object Model (abbrevkiated as DOM) 
+Document Object Model (abbreviated as DOM) 
+DOM is referred to be tree objects/ nodes that is created by the web browser
+- each node contains its own properties/ methods
+- It can be manipulated by using Javascript
+
+### In-built DOM methods
+<b>Examples</b>
+<br><code> 
+document.domain //domain name
+document.URL //URL location
+document.head //targeting head of the HTML 
+document.body //targeting body of the HTML
+document.
+</code>
 
 ## API Key & importance of its access
 API key is used by multiple web APIs, that provide access control (for identification).
