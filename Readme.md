@@ -628,9 +628,14 @@ DOM traversal is referred to be working down the DOM tree from targeting particu
 - document.getElementbyId('id-name') //targeting particular elements with specific id-name
 - document.getElementbyClassName
 // targeting particular elements with specific class name
+- document.getElementbyTagName('li').style.color = "white"; // targeting list item to amend color style
 </code>
+
 * Upwards
-- document
+- document.parentElement // return specific parent element of the directed element
+
+* Same level
+
 ### Events
 
 ### Client Side Storage
