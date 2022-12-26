@@ -608,22 +608,22 @@ docuement.all[5].textContent = '' //targeting the sixth child Node of the HTML d
 document.images
 document.links
 *these methods could be of disadvantage for maintainence as index of child Node can change due to ammendments 
+</code>
 
 ### Parent Child Relationship
-<img src="./dom-links.svg"/>
+<img src="./dom-links.svg"/><br>
 Parent Child is commonly used in the reference of Tree and Nodes of document. 
 Parent is an object that contains more than one children (Node)
 Child(Node) can also contain children
 
 ### DOM transversal
+DOM transversal is referred to be working down the DOM tree from targeting particular parent element to passing into the specific child element to make ammendments
 
 
 
 
 
 
-
-</code>
 
 ## API Key & importance of its access
 API key is used by multiple web APIs, that provide access control (for identification).
