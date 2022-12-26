@@ -460,7 +460,7 @@ var planets = [<br>
 
 // Filtering Methods<br>
 
-// Find<br>
+// Find - return as object<br>
 console.log(numbers.find(function(i) {<br>
   return i > 10<br>
 }))<br>
@@ -468,20 +468,33 @@ console.log(numbers.find(function(i) {<br>
 console.log(planets.find(function(i) {<br>
   return i.moons > 10<br>
 }))<br>
+//expected return as {"name": "Jupiter", "moons": 79} prototype: object
 </code>
 
 ### .filter()
 .filter method creates a shallow copy of portion of given array and filtered to only elements from the given array that pass the parameter of testing function
 
 <code>
-// Find<br>
-console.log(numbers.find(function(i) {<br>
-  return i > 10<br>
+// Find - return as array<br>
+console.log(numbers.filter(function(i) {<br>
+  return i >= 10<br>
 }))<br>
+//expected to return as arr(2) [10,12] prototype: Array<br>
 
-console.log(planets.find(function(i) {<br>
+console.log(planets.filter(function(i) {<br>
   return i.moons > 10<br>
 }))<br>
+//expected to return as arr(2)
+[
+    {
+        "name": "Jupiter",
+        "moons": 79
+    },
+    {
+        "name": "Saturn",
+        "moons": 82
+    }
+]
 </code>
 
 ## String methods
@@ -567,9 +580,14 @@ console.log(itemNames);<br>
 
 </code>
 
+## DOM manipulation
+Document Object Model (abbrevkiated as DOM)
+
 ## API
 Application Programming Interface
 - provide a way for creating user code that utilises pre-built code to conduct various tasks.
+- e.g. web APIs, third party APIs
+
 ## API Key & importance of its access
 API key is used by multiple web APIs, that provide access control (for identification).
 API key usually is related to the identification of API user also different rights (i.e.quota and authorisation area) that are open for access to the key
