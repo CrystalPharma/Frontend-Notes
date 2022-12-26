@@ -595,15 +595,27 @@ DOM is referred to be tree objects/ nodes that is created by the web browser
 - each node contains its own properties/ methods
 - It can be manipulated by using Javascript
 
+### Parent Child Relationship
+<img src="./dom-links.svg"/>
+Parent Child is commonly used in the reference of Tree and Nodes of document. 
+
+
 ### In-built DOM methods
 <b>Examples</b>
 <br><code> 
 document.domain //domain name
 document.URL //URL location
+document.title //title of the HTML document
 document.head //targeting head of the HTML 
 document.body //targeting body of the HTML
 document.all[index] //targeting specific child Node of the document
 docuement.all[5].textContent = '' //targeting the sixth child Node of the HTML document and changing text content into given text
+document.images
+document.links
+*these methods could be of disadvantage for maintainence as index of child Node can change due to ammendments 
+
+
+
 
 </code>
 
