@@ -580,13 +580,17 @@ console.log(itemNames);<br>
 
 </code>
 
-## DOM manipulation
-Document Object Model (abbrevkiated as DOM)
-
 ## API
 Application Programming Interface
 - provide a way for creating user code that utilises pre-built code to conduct various tasks.
 - e.g. web APIs, third party APIs
+
+## Web browser
+Web browser is the most common programme (user agent) used to retrieve and display pages from web server
+Every webpage, img and videos on web can be accessed via specific unifrom resource locator (URL)
+
+## DOM manipulation
+Document Object Model (abbrevkiated as DOM) 
 
 ## API Key & importance of its access
 API key is used by multiple web APIs, that provide access control (for identification).
