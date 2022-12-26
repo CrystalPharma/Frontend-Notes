@@ -602,7 +602,9 @@ document.domain //domain name
 document.URL //URL location
 document.head //targeting head of the HTML 
 document.body //targeting body of the HTML
-document.
+document.all[index] //targeting specific child Node of the document
+docuement.all[5].textContent = '' //targeting the sixth child Node of the HTML document and changing text content into given text
+
 </code>
 
 ## API Key & importance of its access
