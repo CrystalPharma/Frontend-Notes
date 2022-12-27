@@ -620,23 +620,49 @@ Child(Node) can also contain children
 ### DOM traversal
 DOM traversal is referred to be working down the DOM tree from targeting particular parent element to passing into the specific child element to make ammendments with different directions
 
-* Downwards
+<h3>Downwards </h3>
 <code>
+
 - document.querySelector
+
 - document.querySelectorAll('p')// targeting all paragraph tags
 - document.children //targeting the specific HTML elements that is the direct child of the tree
 - document.getElementbyId('id-name') //targeting particular elements with specific id-name
 - document.getElementbyClassName
 // targeting particular elements with specific class name
 - document.getElementbyTagName('li').style.color = "white"; // targeting list item to amend color style
+- function myFunction() {
+
+  document.getElementById("myH1").setAttribute("class", "democlass"); 
+  
+  }
+<br>
+.demoClass{color:red};// setAttribute method require 2 parameters
+- further example for setAttribute
+
+  site2El.children[0].textContent = "Site 2";
+  site2El.children[1].setAttribute("href", "https://twitter.com");
+  site2El.children[1].children[0].setAttribute("src", "assets/images/image_2.jpg");
+  site2El.children[1].children[0].setAttribute("alt", "group brainstorm");
+  site2El.children[1].children[0].setAttribute("style", "padding:10px;");
+
 </code>
 
-* Upwards
+<h3> Upwards </h3>
+<code>
+
 - document.parentElement // return specific parent element of the directed element
+</code>
+<h3> Same level</h3>
+<code>
 
-* Same level
+- element.nextElementSibling // return the next element that is the same level in parent tree
+- element.previousElementSibling // return the previous element that is the same level in parent tree
+</code>
 
-### Events
+<h2> Events </h2>
+
+
 
 ### Client Side Storage
 
