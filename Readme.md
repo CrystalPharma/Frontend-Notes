@@ -717,16 +717,39 @@ setTime();
 addEventListener() is a method that attaches event handler to specified element
 - addEventListener() contains 2 parameters: event and action 
 It is useful when used together with a callback function triggered by the specific event target
+- event targets are element, or children of Node, document and window object
 
 e.g. <br>
 <code>
+document.getElementById("myBtn").addEventListener("click", myFunction);
 
+function myFunction() {
+  alert ("Hello World!");
+}
 </code>
 
 ### event.preventDefault()
+In Javascript there are some default behaviours in certain elements. event.preventDefault() prevents the occurence of the default actions.
+
+e.g.<br>
+<code>
+const form = document.getElementById('form')
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault()
+  
+  // process data and submit a request 
+
+  // prevent default action of form 
+})
+</code>
+
+### KeyboardEvent.key
+
+keydown event
 
 ### event.stopPropagation()
-
+event.stopPropagation() is a method to prevent the spreading of events when an event is triggered on an element
 
 ### Client Side Storage
 
