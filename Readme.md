@@ -714,6 +714,14 @@ setTime();
 <h2> Events </h2>
 
 ### addEventListener()
+addEventListener() is a method that attaches event handler to specified element
+- addEventListener() contains 2 parameters: event and action 
+It is useful when used together with a callback function triggered by the specific event target
+
+e.g. <br>
+<code>
+
+</code>
 
 ### event.preventDefault()
 
