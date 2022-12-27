@@ -355,7 +355,7 @@ var child = {
 
   ageTenYears: function () {
 
-    console.log(this.age + 10);
+   console.log(this.age + 10);
 
   },
 
@@ -371,13 +371,13 @@ var investor = {
 
   investment: {
 
-    initialInvestment: 5000,
+  initialInvestment: 5000,
 
-    investmentGrowth: function () {
+  investmentGrowth: function () {
 
-      console.log(this.initialInvestment * 1.15);
+   console.log(this.initialInvestment * 1.15);
 
-    },
+  },
 
   },
 
@@ -659,7 +659,7 @@ createElement() creates a Node element and appendChild append the created Node e
 
 - var header = document.getElementById('header').createElement('h1');<br>
 document.body.appendChild(header);
-
+- document.createTextNode('hello world');
 </code>
 
 
