@@ -713,6 +713,11 @@ setTime();
 
 <h2> Events </h2>
 
+### addEventListener()
+
+### event.preventDefault()
+
+### event.stopPropagation()
 
 
 ### Client Side Storage
