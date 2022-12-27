@@ -636,29 +636,80 @@ DOM traversal is referred to be working down the DOM tree from targeting particu
   document.getElementById("myH1").setAttribute("class", "democlass"); 
   
   }
-<br>
-.demoClass{color:red};// setAttribute method require 2 parameters
+  
+  .demoClass{color:red};// setAttribute method require 2 parameters first (CSS styles) second (attribute value)
 - further example for setAttribute
+    site2El.children[0].textContent = "Site 2";
+    site2El.children[1].setAttribute("href", "https://twitter.com");
+    site2El.children[1].children[0].setAttribute("src", "assets/images/image_2.jpg");
+    site2El.children[1].children[0].setAttribute("alt", "group brainstorm");
+    site2El.children[1].children[0].setAttribute("style", "padding:10px;");
 
-  site2El.children[0].textContent = "Site 2";
-  site2El.children[1].setAttribute("href", "https://twitter.com");
-  site2El.children[1].children[0].setAttribute("src", "assets/images/image_2.jpg");
-  site2El.children[1].children[0].setAttribute("alt", "group brainstorm");
-  site2El.children[1].children[0].setAttribute("style", "padding:10px;");
-
-</code>
+  </code>
 
 <h3> Upwards </h3>
 <code>
 
 - document.parentElement // return specific parent element of the directed element
 </code>
+
+<h4>Create and Append</h4>
+createElement() creates a Node element and appendChild append the created Node element into the child of the body 
+<code>
+
+- var header = document.getElementById('header').createElement('h1');<br>
+document.body.appendChild(header);
+
+</code>
+
+
 <h3> Same level</h3>
 <code>
 
 - element.nextElementSibling // return the next element that is the same level in parent tree
 - element.previousElementSibling // return the previous element that is the same level in parent tree
 </code>
+
+<h3>Timer and Intervals</h3>
+example<br>
+<code>
+// Selects element by class
+var timeEl = document.querySelector(".time");
+
+// Selects element by id
+var mainEl = document.getElementById("main");
+
+var secondsLeft = 10;
+
+function setTime() {
+  // Sets interval in variable
+  var timerInterval = setInterval(function() {
+    secondsLeft--;
+    timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+
+  if(secondsLeft === 0) {
+      // Stops execution of action at set interval
+      clearInterval(timerInterval);
+      // Calls function to create and append image
+      sendMessage();
+    }
+
+  }, 1000);
+}
+
+// Function to create and append colorsplosion image
+function sendMessage() {
+  timeEl.textContent = " ";
+  var imgEl = document.createElement("img");
+  imgEl.setAttribute("src", "images/image_1.jpg");
+  mainEl.appendChild(imgEl);
+
+}
+
+setTime();
+
+</code>
+
 
 <h2> Events </h2>
 
