@@ -750,6 +750,70 @@ keydown event
 
 ### event.stopPropagation()
 event.stopPropagation() is a method to prevent the spreading of events when an event is triggered on an element
+- In Javascript when an event is triggered on an element 
+
+e.g. <br>
+<code>
+var outer = document.querySelector(".outer-div");
+var inner = document.querySelector(".inner-div");
+var button = document.querySelector(".button");
+
+function changeBlue(event) {
+  event.stopPropagation();
+  event.currentTarget.setAttribute(
+    "style",
+    "background-color: blue"
+  );
+}
+
+function changePurple(event) {
+  event.stopPropagation();
+  event.currentTarget.setAttribute(
+    "style",
+    "background-color: #601A4A"
+  );
+}
+
+function changeOrange(event) {
+  event.stopPropagation();
+  event.currentTarget.setAttribute(
+    "style",
+    "background-color: #EE442F; color: white;"
+  );
+}
+</code>
+
+### event.target()
+event.target indicates the element slected and is used usually for event delegation
+
+<code>
+var container = document.querySelector(".container");
+
+container.addEventListener("click", function(event) {
+
+  var element = event.target;
+
+  console.log(element);
+
+  if (element.matches(".box")) {
+
+  var state = element.getAttribute("data-state");
+
+  element.textContent = element.dataset.number;
+
+  element.dataset.state ="visible";
+
+  } else {
+
+  element.textContent = "";
+
+  element.setAttribute= ("data-state", "hidden");
+
+  };
+  
+});
+
+</code>
 
 ### Client Side Storage
 
