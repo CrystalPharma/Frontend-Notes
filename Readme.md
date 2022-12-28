@@ -854,6 +854,93 @@ and should not be in form of objects
 JSON.stringify() together with setItem()
 - conversion of strings to objects 
 JSON.parse() together with getItem()
+when string is converted back to an object
+values stored in localStorage can be easily accessed using the dot notation
+<br>e.g.
+
+<code>
+userFirstNameSpan.textContent = lastUser.firstName;
+
+userEmailSpan.textContent = lastUser.email;
+</code>
+
+Example for memo<br>
+<code>
+var todoInput = document.querySelector("#todo-text");
+var todoForm = document.querySelector("#todo-form");
+var todoList = document.querySelector("#todo-list");
+var todoCountSpan = document.querySelector("#todo-count");
+
+var todos = [];
+
+renderTodos();
+
+function init() {
+  var storedTodos = JSON.parse(localStorage.getItem('todos'));
+
+  if (storedTodos !== null){
+    todos = storedTodos;
+  }
+
+}
+
+function renderTodos() {
+  // Clear todoList element and update todoCountSpan
+  todoList.innerHTML = "";
+  todoCountSpan.textContent = todos.length;
+
+  // Render a new li for each todo
+  for (var i = 0; i < todos.length; i++) {
+    var todo = todos[i];
+
+  var li = document.createElement("li");
+  li.textContent = todo;
+  li.setAttribute("data-index", i);
+  todoList.appendChild(li);
+
+  var button =document.createElement('button');
+  button.textContent = "Complete";
+  li.appendChild(button);
+  }
+}
+
+
+// When form is submitted...
+todoForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var todoText = todoInput.value.trim();
+
+  // Return from function early if submitted todoText is blank
+  if (todoText === "") {
+    return;
+  }
+
+  // Add new todoText to todos array, clear the input
+  todos.push(todoText);
+  todoInput.value = "";
+
+  // Re-render the list
+  storeTodos();
+  renderTodos();
+});
+
+function storeTodos (){
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+todoList.addEventListener('click', function(event){
+  var element = event.target;
+  console.log(element);
+  if (element.matches('button') === true){
+    var index = element.parentElement.getAttribute('data-index');
+    todos.splice(index, 1);
+    
+  renderTodos();
+  }
+})
+
+</code>
 
 ## API Key & importance of its access
 API key is used by multiple web APIs, that provide access control (for identification).
