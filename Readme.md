@@ -843,14 +843,17 @@ var parent = $('#electric-cars').getAttribute('data-parent');
 
 ## Client Side Storage
 
-Window.localStorage is a property of window interface allowing to access Storage object for the docuemnt's origin. Stored data and Items are added and stored in the browser.
+Window.localStorage is a property of window interface allowing to access Storage object for the docuemnt's origin. Stored data and Items are added and stored in the browser with key/value pairs
 
-Web API client-side storage 
-
-
-
-
-
+Web API client-side storage enables to store data and manipulate it via Javascript
+- setItem()
+- getItem()
+Local Storage only store elements in strings
+and should not be in form of objects
+- conversion of objects into strings
+JSON.stringify() together with setItem()
+- conversion of strings to objects 
+JSON.parse() together with getItem()
 
 ## API Key & importance of its access
 API key is used by multiple web APIs, that provide access control (for identification).
