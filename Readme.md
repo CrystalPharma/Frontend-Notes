@@ -823,6 +823,7 @@ Data attributes are used to store extra information related to the elements in H
 a data attribute
 
 <code>
+
 //article tag
 
   id="electric-cars"
@@ -840,8 +841,11 @@ var parent = $('#electric-cars').getAttribute('data-parent');
 
 </code>
 
-### Client Side Storage
+## Client Side Storage
 
+Window.localStorage is a property of window interface allowing to access Storage object for the docuemnt's origin. Stored data and Items are added and stored in the browser.
+
+Web API client-side storage 
 
 
 
