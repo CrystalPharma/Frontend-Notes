@@ -810,12 +810,36 @@ container.addEventListener("click", function(event) {
   element.setAttribute= ("data-state", "hidden");
 
   };
-  
+
 });
 
 </code>
 
+
+### Data attributes
+Data attributes are used to store extra information related to the elements in HTML, without the use of extra DOM properties.
+
+- We use data- to start the name of any element that is 
+a data attribute
+
+<code>
+//article tag
+
+  id="electric-cars"
+
+  data-columns="3"
+
+  data-index-number="12314"
+
+  data-parent="cars"
+
+//script js
+console.log($('#electric-cars').dataset.columns.textContent); 
+
+</code>
+
 ### Client Side Storage
+
 
 
 
