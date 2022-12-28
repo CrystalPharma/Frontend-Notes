@@ -833,8 +833,10 @@ a data attribute
 
   data-parent="cars"
 
-//script js
-console.log($('#electric-cars').dataset.columns.textContent); 
+//script js accessing values stored in data attributes
+var columns = $('#electric-cars').dataset.columns.textContent); 
+
+var parent = $('#electric-cars').getAttribute('data-parent');
 
 </code>
 
